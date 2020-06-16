@@ -11,10 +11,12 @@ Neste projeto foram empregadas duas formas de realizar paginação:
 - Site: "mockaroo.com"
 
 1º - Para este projeto, gerei um arquivo '.csv' com 1000 registros de clientes contendo os campos 'nome', 'sobrenome' e 'email'.
+
 2º - Após o download, foi necessário formatar o arquivo no excel para ficar no estilo de SEEDER do Laravel.
     * Ex.:  DB::table('clientes')->insert(['nome'=>'Lanni','sobrenome'=>'Raxworthy','email'=>'lraxworthy0@princeton.edu']);.
 
 3º - Colei os registros formatados na classe 'ClientesSeeder'.
+
 4º - Executei a seeder no terminal para popular o banco de dados.
 
 ### 1ª FORMA: Paginação com o método PAGINATE() do LARAVEL
