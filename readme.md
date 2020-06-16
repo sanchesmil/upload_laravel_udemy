@@ -19,7 +19,7 @@ Neste projeto foram empregadas duas formas de realizar paginação:
 
 4º - Executei a seeder no terminal para popular o banco de dados.
 
-### 1ª FORMA: Paginação com o método PAGINATE() do LARAVEL
+### 1ª FORMA: Paginação com os métodos PAGINATE() no controlador e LINKS() na view do LARAVEL
 
     O paginador do Laravel é integrado ao construtor de consultas Query Builder e ao Eloquent ORM e 
     fornece paginação conveniente e fácil de usar dos resultados do banco de dados. 
