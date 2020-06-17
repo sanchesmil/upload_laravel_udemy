@@ -42,7 +42,7 @@ Por default, o arquivo 'config\filesystems.php' já define 3 'discos' de armazen
   criar um link simbólico na raiz do diretório 'public' que
   aponte para o diretório 'storage\app\public'.
 
-  ##### Cmd: php artisan storage:link
+  ##### php artisan storage:link
 
   - Obs.: Tudo que for criado dentro de 'storage\app\public' estará 
   acessível em 'public'.
