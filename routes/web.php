@@ -1,21 +1,10 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+Route::get('/', 'PostControlador@index');   // mostra todos os posts e suas imagens
 
-use App\Http\Controllers\ClienteControlador;
+Route::post('/', 'PostControlador@store');  // armazena um novo post na base e sua imagem no storage
+Route::delete('/{id}','PostControlador@destroy');  // apaga um post e sua imagem
 
-//Route::get('/', 'ClienteControlador@index');  // Realiza a paginação usando os recursos do próprio LARAVEL
-
-Route::get('/', 'ClienteControlador@indexjs');  // Realiza a paginação usando JQUERY
-Route::get('/json', 'ClienteControlador@indexjson');
+Route::get('/download/{id}','PostControlador@download'); // realiza o download da imagem de um post
 
 
